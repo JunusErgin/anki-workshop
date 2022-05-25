@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
     <script src="include.js"></script>
+    <script src="firebase.js" type="module"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
@@ -27,7 +28,7 @@
 
                     <div class="mdl-card__supporting-text">
 
-                        <select>
+                        <select id="category">
                             <option value="" disabled selected>Stapel auswählen</option>
                             <option value="HTML">HTML</option>
                             <option value="CSS">CSS</option>
@@ -55,6 +56,12 @@
                           </div>
                     </div>
                 </div>
+                <div class="container-button">
+                <button class=" mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="createFlashcard()">
+                    <i class="material-icons">save</i>
+                    Speichern
+                  </button>
+                  </div>
             </div>
         </main>
     </div>
