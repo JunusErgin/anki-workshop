@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="include.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+</head>
+
+<body onload="includeHTML()">
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+        <div w3-include-html="templates/header.html"></div>
+        <main class="mdl-layout__content">
+            <div class="page-content">
+                <!-- Your content goes here -->
+                <div class="mb-32 mdl-card mdl-shadow--2dp full-width">
+                    <div class="mdl-card__title">
+                        <h2 class="mdl-card__title-text">Vorderseite</h2>
+                    </div>
+
+                    <div class="mdl-card__supporting-text">
+
+                        <select>
+                            <option value="" disabled selected>Stapel auswählen</option>
+                            <option value="HTML">HTML</option>
+                            <option value="CSS">CSS</option>
+                            <option value="JavaScript">JavaScript</option>
+                            <option value="JavaScript">Python</option>
+                            <option value="Angular">Angular</option>
+                            <option value="Theorie">Theorie</option>
+                        </select>
+
+                        <div class="mdl-textfield mdl-js-textfield full-width">
+                            <textarea class="mdl-textfield__input" type="text" rows= "3" id="question" ></textarea>
+                            <label class="mdl-textfield__label" for="question">Bitte Frage eintippen...</label>
+                          </div>
+                    </div>
+                </div>
+
+                <div class="mdl-card mdl-shadow--2dp full-width">
+                    <div class="mdl-card__title">
+                        <h2 class="mdl-card__title-text">Rückseite</h2>
+                    </div>
+                    <div class="mdl-card__supporting-text">
+                        <div class="mdl-textfield mdl-js-textfield full-width">
+                            <textarea class="mdl-textfield__input" type="text" rows= "3" id="answer" ></textarea>
+                            <label class="mdl-textfield__label" for="answer">Bitte Antwort eintippen...</label>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>

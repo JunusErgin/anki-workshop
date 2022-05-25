@@ -1,0 +1,19 @@
+.full-width {
+    width: 100% !important;
+}
+
+.mb-32 {
+    margin-bottom: 32px;
+}
+
+.page-content {
+    padding: 64px 128px;
+    background-color: rgba(0,0,0,0.05);
+    min-height: calc(100vh - 64px);
+    box-sizing: border-box;
+}
+
+.mdl-card__supporting-text {
+    display: flex;
+    flex-direction: column;
+}
