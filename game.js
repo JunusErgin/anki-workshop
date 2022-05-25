@@ -1,9 +1,10 @@
 let flashcardList = [];
 let currentFlashcard;
+let category;
 
 async function startGame() {
     const urlParams = new URLSearchParams(window.location.search);
-    const category = urlParams.get('category');
+    category = urlParams.get('category');
     let flashcardCol = collection(db, category);
     const flashcardSnapshot = await getDocs(flashcardCol);
     flashcardList = flashcardSnapshot.docs.map(doc => doc.data());
@@ -36,6 +37,17 @@ function showFlashcard(question, answer, buttonText, buttonFn) {
           ${buttonText}
         </a>
       </div>
+      <div class="mdl-card__menu">
+    <button onclick="deleteCurrentFlashcard()" class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+      <i class="material-icons">delete</i>
+    </button>
+  </div>
     </div>
     `;
+}
+
+async function deleteCurrentFlashcard() {
+    await deleteDoc(doc(db, category, currentFlashcard.question));
+    showSnackbar('Die Frage wurde gelöscht.');
+    nextFlashcard();
 }

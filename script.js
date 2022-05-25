@@ -10,7 +10,7 @@ function createFlashcard() {
     };
 
     setDoc(doc(db, category.value, question.value), json);
-    showSnackbar();
+    showSnackbar('Aufgabe hinzugefügt');
     category.value = '';
     question.value = '';
     answer.value = '';
@@ -25,11 +25,11 @@ const CATEGORIES = [
     'Theorie'
 ];
 
-function showSnackbar() {
+function showSnackbar(msg) {
     let snackbarContainer = document.querySelector('#snackbar-example');
     let handler = function (event) { };
     let data = {
-        message: 'Aufgabe hinzugefügt',
+        message: msg,
         timeout: 2000,
         actionHandler: handler,
         actionText: 'Schließen'

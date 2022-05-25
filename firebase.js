@@ -1,5 +1,5 @@
 import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.8.1/firebase-app.js'
-import { getFirestore, collection, getDocs, doc, setDoc } from 'https://www.gstatic.com/firebasejs/9.8.1/firebase-firestore.js'
+import { getFirestore, collection, getDocs, doc, setDoc, deleteDoc } from 'https://www.gstatic.com/firebasejs/9.8.1/firebase-firestore.js'
 
 
 // Your web app's Firebase configuration
@@ -22,5 +22,6 @@ window.doc=doc;
 window.setDoc=setDoc;
 window.getDocs=getDocs;
 window.collection=collection;
+window.deleteDoc=deleteDoc;
 
 console.log('Created db', db);
