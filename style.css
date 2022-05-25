@@ -27,3 +27,20 @@
     display: flex;
     justify-content: flex-end;
 }
+
+.menu-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 42px !important; 
+    border-radius: 8px !important;
+    cursor: pointer;
+}
+
+.menu-card:hover {
+    background-color: rgb(63, 81, 181, 0.13);
+}
+
+.mdl-card__supporting-text {
+    min-height: 100px;
+}

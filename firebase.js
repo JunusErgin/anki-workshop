@@ -20,5 +20,7 @@ window.app=app;
 window.db=db;
 window.doc=doc;
 window.setDoc=setDoc;
+window.getDocs=getDocs;
+window.collection=collection;
 
 console.log('Created db', db);

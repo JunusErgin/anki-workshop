@@ -39,9 +39,9 @@
                         </select>
 
                         <div class="mdl-textfield mdl-js-textfield full-width">
-                            <textarea class="mdl-textfield__input" type="text" rows= "3" id="question" ></textarea>
+                            <textarea class="mdl-textfield__input" type="text" rows="3" id="question"></textarea>
                             <label class="mdl-textfield__label" for="question">Bitte Frage eintippen...</label>
-                          </div>
+                        </div>
                     </div>
                 </div>
 
@@ -51,17 +51,22 @@
                     </div>
                     <div class="mdl-card__supporting-text">
                         <div class="mdl-textfield mdl-js-textfield full-width">
-                            <textarea class="mdl-textfield__input" type="text" rows= "3" id="answer" ></textarea>
+                            <textarea class="mdl-textfield__input" type="text" rows="3" id="answer"></textarea>
                             <label class="mdl-textfield__label" for="answer">Bitte Antwort eintippen...</label>
-                          </div>
+                        </div>
                     </div>
                 </div>
                 <div class="container-button">
-                <button class=" mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="createFlashcard()">
-                    <i class="material-icons">save</i>
-                    Speichern
-                  </button>
-                  </div>
+                    <button class=" mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect"
+                        onclick="createFlashcard()">
+                        <i class="material-icons">save</i>
+                        Speichern
+                    </button>
+                </div>
+                <div id="snackbar-example" class="mdl-js-snackbar mdl-snackbar">
+                    <div class="mdl-snackbar__text"></div>
+                    <button class="mdl-snackbar__action" type="button"></button>
+                </div>
             </div>
         </main>
     </div>
